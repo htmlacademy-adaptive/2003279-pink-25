@@ -9,85 +9,97 @@
     <header class="main-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <img class="main-nav__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nan__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a>Конкурс</a>
+            <a class="main-nan__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML academy</a>
+            <a class="main-nan__link main-nav__link--current">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nan__link" href="https://htmlacademy.ru/">HTML academy</a>
           </li>
         </ul>
       </nav>
 
 
       <section class="intro">
-        <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
         <div class="page-wrapper">
-          <h2 class="intro__caption title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h1 class="intro__caption title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
     </header>
 
     <main class="main-container">
-      <section class="form">
+      <section class="form-section">
         <h2 class="visually-hidden">Заполните форму</h2>
         <div class="page-wrapper">
           <b class="form__caption subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</b>
           <form class="form" action="https://echo.htmlacademy.ru/" name="photo-award" method="post">
 
-            <div class="form__fieldset form-name">
-              <label class="form__label" for="surname">Фамилия:</label>
-              <input class="form__input" id="surname" name="surname" placeholder="Укажите фамилию *" required>
-              <label class="form__label" for="name">Имя:</label>
-              <input class="form__input" id="name"  name="name" placeholder="Введите ваше имя *" required>
-              <label class="form__label" for="middlename">Отчество:</label>
-              <input class="form__input" id="middlename" name="middlename" placeholder="Ну и отчество тоже">
-            </div>
+            <fieldset class="form__fieldset form-name">
+              <legend class="form__legend visually-hidden">Представьтесь</legend>
+              <ul class="form__label-list">
+                <li class="form__label-item">
+                  <label class="form__label">
+                    <span class="form__label-name">Фамилия:</span>
+                    <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                  </label>
+                </li>
+
+                <li class="form__label-item">
+                  <label class="form__label">
+                    <span class="form__label-name">Имя:</span>
+                    <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+                  </label>
+                </li>
+
+                <li class="form__label-item">
+                  <label class="form__label">
+                    <span class="form__label-name">Отчество:</span>
+                    <input class="form__input" type="text" name="middlename" placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+
+            </fieldset>
 
             <fieldset class="form__fieldset form-achieves">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form-achieves__list">
                 <li class="form-achieves__item">
                   <label class="control">
-                    <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="selfie-shark">
-                    <span class="control__mark control__mark--checked"></span>
+                    <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="selfie-shark" checked>
                     <span class="control__label">Сделал селфи с акулой</span>
                   </label>
                 </li>
                 <li class="form-achieves__item">
                 <label class="control">
-                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="burned-on-the-beach">
-                  <span class="control__mark control__mark--checked"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="burned-on-the-beach" checked>
                   <span class="control__label">Обгорел на пляже</span>
                 </label>
                 </li>
                 <li class="form-achieves__item">
                   <label class="control">
                     <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="met-chak-norris">
-                    <span class="control__mark"></span>
                     <span class="control__label">Видел Чака Норриса</span>
                   </label>
                 </li>
                 <li class="form-achieves__item">
                   <label class="control">
                     <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="buy-souvenirs">
-                    <span class="control__mark"></span>
                     <span class="control__label">Накупил сувениров</span>
                   </label>
                 </li>
                 <li class="form-achieves__item">
                   <label class="control">
-                    <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="hold-towel">
-                    <span class="control__mark control__mark--checked"></span>
+                    <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="hold-towel" checked>
                     <span class="control__label">Удержал башню</span>
                   </label>
                 </li>
@@ -103,10 +115,21 @@
 
             <fieldset class="form__fieldset form-contacts">
               <legend class="form__legend visually-hidden">Контактная информация</legend>
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input" id="phone" name="phone" placeholder="Номер, пожалуйста">
-              <label class="form__label" for="email">Адрес почты</label>
-              <input class="form__input" id="email" name="email" placeholder="Введите почту *">
+              <ul class="form__label-list">
+                <li class="form__label-item">
+                  <label class="form__label">
+                    <span class="form__label-name">Номер телефона</span>
+                    <input class="form__input" type="number" name="phone" placeholder="Номер, пожалуйста">
+                  </label>
+                </li>
+
+                <li class="form__label-item">
+                  <label class="form__label">
+                    <span class="form__label-name">Адрес почты</span>
+                    <input class="form__input" type="email" name="email" placeholder="Введите почту *" required>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="form__fieldset form-apps">
@@ -114,32 +137,31 @@
               <ul class="form-apps__list">
                 <li class="form-apps__item">
                   <label class="control">
-                    <input class="visually-hidden control__input control__input--radio" type="radio" name="pink-for-ios" checked>
-                    <span class="control__mark"></span>
+                    <input class="visually-hidden control__input control__input--radio" type="radio" name="application" checked>
                     <span class="control__label">Pink для iOs</span>
                   </label>
                 </li>
                 <li class="form-apps__item">
                   <label class="control">
-                    <input class="visually-hidden control__input control__input--radio" type="radio" name="pink-for-android">
-                    <span class="control__mark"></span>
+                    <input class="visually-hidden control__input control__input--radio" type="radio" name="application">
                     <span class="control__label">Pink на Android</span>
                   </label>
                 </li>
                 <li class="form-apps__item">
                   <label class="control">
-                    <input class="visually-hidden control__input control__input--radio" type="radio" name="pink-for-windows">
-                    <span class="control__mark"></span>
+                    <input class="visually-hidden control__input control__input--radio" type="radio" name="application">
                     <span class="control__label">Windows Phone</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="form__fieldset form-review">
-              <legend class="form__legend">Опишите свои эмоции</legend>
-              <textarea class="form__textarea" rows="6" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
+            <div class="form__fieldset form-review">
+              <label class="form__legend">
+                <span class="form__label-name">Опишите свои эмоции</span>
+                <textarea class="form__textarea" rows="6" cols="24" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </label>
+            </div>
 
             <button class="form__submit form-button" type="submit">Отправить форму</button>
             <span class="form__notice">* - Обязательные поля</span>
