@@ -8,6 +8,7 @@
   border-style: solid;
   box-sizing: border-box;
   text-decoration: none;
+  padding: 0;
 
 
   &--primary {
@@ -32,9 +33,10 @@
   }
 
   &--secondary {
-    padding: 15px 88px;
+    width: 280px;
+    min-height: 55px;
     font-size: 18px;
-    line-height: 19px;
+    line-height: 18px;
     color: @pink;
     border-color: @pink;
   }
@@ -47,6 +49,27 @@
   }
 
   &--secondary:active {
+    color: @fade-white;
+  }
+
+  &--tertiary {
+    width: 280px;
+    min-height: 55px;
+    font-size: 18px;
+    line-height: 18px;
+    color: fade(@dark-gray, 10%);
+    border-color: fade(@dark-gray, 10%);
+  }
+
+  &--tertiary:hover,
+  &--tertiary:focus-visible {
+    color: fade(@dark-gray, 30%);
+    border-color: fade(@dark-gray, 30%)
+  }
+
+  &--tertiary:active {
+    background-color: fade(@dark-gray, 30%);
+    border: none;
     color: @fade-white;
   }
 }

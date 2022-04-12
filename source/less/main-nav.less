@@ -12,6 +12,20 @@
 .main-nav__logo {
   display: inline-block;
   padding: 22px 20px 21px;
+  fill: @white;
+
+  &--glasses {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @fade-white;
+  }
 }
 
 .main-nav__logo-image {
@@ -20,7 +34,7 @@
 
 .main-nav__list {
   list-style-type: none;
-  display: none;
+  // display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,4 +51,13 @@
   background-color: @navy-blue;
   box-shadow: 0px 1px 0px @black, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: @pink;
+  }
+
+  &:active {
+    color: @fade-white;
+  }
 }

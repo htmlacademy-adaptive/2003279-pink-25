@@ -1,0 +1,29 @@
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @green;
+  color: @white;
+  width: 300px;
+  min-height: 63px;
+  border-radius: 1px;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: @fade-white;
+  }
+
+  &:disabled {
+    background-color: @gray;
+  }
+}

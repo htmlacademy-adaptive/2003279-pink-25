@@ -1,5 +1,5 @@
 .contacts {
-  padding: 47px;
+  padding-top: 47px;
 }
 
 .contacts__caption {
@@ -28,8 +28,6 @@
   margin-bottom: 4px;
 }
 
-
-
 .contacts__text {
   display: block;
   margin: 0;
@@ -40,4 +38,17 @@
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
+}
+
+.contacts__email {
+  &:hover,
+  &:focus-visible {
+    color: @dark-gray;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@dark-gray, 30%);
+    text-decoration: none;
+  }
 }

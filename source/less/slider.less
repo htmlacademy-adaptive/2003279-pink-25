@@ -18,6 +18,15 @@
     margin-right: 19px
   }
 
+  &:hover,
+  &:focus-visible {
+    background-color: fade(@dark-gray, 60%);
+  }
+
+  &:active {
+    background-color: fade(@dark-gray, 10%);
+  }
+
   &--current {
     outline: 3px solid @dark-gray;
     background-color: @white;

@@ -56,4 +56,14 @@
     background-repeat: no-repeat;
     background-position: 55% 50%;
   }
+
+  &:hover,
+  &:focus-visible {
+    border-color: @dark-gray;
+  }
+
+  &:active {
+    border-color: fade(@dark-gray, 10%);
+    opacity: 0.3;
+  }
 }

@@ -1,0 +1,56 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item {
+  background-color: @light-gray;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog__user-photo {
+  object-fit: cover;
+}
+
+.catalog__user-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: @dark-gray;
+}
+
+.catalog__user-date {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: @dark-gray;
+}
+
+.catalog__user-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: @dark-gray;
+}
+
+.catalog__user-like {
+  color: @pink;
+  padding-left: 31px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 12px;
+    background: url("../img/heart.svg") no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+}

@@ -12,8 +12,14 @@
 }
 
 .copyright__link {
-  display: block;
-  width: 35px;
-  height: 40px;
-  background: url("../img/html-academy-logo.svg") no-repeat center;
+  fill: @pink;
+
+  &:hover,
+  &:focus-visible {
+    fill: @dark-gray;
+  }
+
+  &:active {
+    fill: fade(@dark-gray, 30%);
+  }
 }
