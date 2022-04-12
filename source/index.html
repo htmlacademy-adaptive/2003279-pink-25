@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
 
     <header class="main-header">
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <a class="main-nav__logo">
@@ -28,34 +30,32 @@
         </ul>
       </nav>
 
-
       <section class="intro">
         <div class="page-wrapper">
           <b class="intro__caption title">Взгляните на жизнь иначе!</b>
-          <div class="intro__image">
-            <img src="img/hand.png" width="320" height="286" alt="Изображение мобильного телефона.">
+          <div class="intro__download-container">
+
+              <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
+              <ul class="intro__application-list">
+                <li class="intro__application-item">
+                  <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
+                </li>
+                <li class="intro__application-item">
+                  <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
+                </li>
+                <li class="intro__application-item">
+                  <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
+                </li>
+              </ul>
+              <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
-          <ul class="intro__application-list application-list">
-            <li class="intro__application-item">
-              <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
-            </li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
+
       </section>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-
-
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
@@ -85,7 +85,7 @@
         <div class="page-wrapper">
           <div class="statistics__description">
             <div class="statistics__info">
-              <b class="statistics__title">Эффект на 24 часа!</b>
+              <b class="statistics__title">Эффект<br>на 24 часа!</b>
               <p class="statistics__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a href="#" class="statistics__link">Узнать больше об исследовании</a>
             </div>
@@ -97,7 +97,7 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="page-wrapper slider">
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item--current">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -117,9 +117,9 @@
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current">1</button>
-            <button class="slider__toggle">2</button>
-            <button class="slider__toggle">3</button>
+            <button class="slider__toggle slider__toggle--current"></button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle"></button>
           </p>
 
         </div>
@@ -147,7 +147,7 @@
             </ul>
           </section>
 
-          <section class="price__item slider__item">
+          <section class="price__item slider__item--current">
             <h3 class="visually-hidden">Стандартный тариф</h3>
             <div class="price__title">
               <span class="price__name">Стандарт</span>
@@ -187,9 +187,9 @@
         </div>
 
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle slider__toggle--current">2</button>
-          <button class="slider__toggle">3</button>
+          <button class="slider__toggle"></button>
+          <button class="slider__toggle slider__toggle--current"></button>
+          <button class="slider__toggle"></button>
         </p>
       </section>
 
@@ -222,26 +222,28 @@
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты в соцсетях</h2>
       <div class="page-wrapper">
-        <a class="main-footer__link">
-          <img class="main-footer__logo" src="img/logo-footer.svg" width="145" height="40" alt="Перейти на главную.">
-        </a>
+        <div class="main-footer__container">
+          <a class="main-footer__link">
+            <img class="main-footer__logo" src="img/logo-footer.svg" width="145" height="40" alt="Перейти на главную.">
+          </a>
 
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          </div>
         </div>
       </div>
     </footer>
