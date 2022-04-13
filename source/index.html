@@ -2,15 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
 
     <header class="main-header">
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
+        <a class="main-nav__logo" href="index.html">
+          <svg class="main-nav__logo--glasses" width="59" height="40" viewBox="0 0 59 40" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"/></svg>
+          <svg class="main-nav__logo--pink" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/></svg>
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -28,34 +31,32 @@
         </ul>
       </nav>
 
-
-      <section class="intro">
+      <section class="intro intro--main">
         <div class="page-wrapper">
-          <b class="intro__caption title">Взгляните на жизнь иначе!</b>
-          <div class="intro__image">
-            <img src="img/hand.png" width="320" height="286" alt="Изображение мобильного телефона.">
+          <b class="intro__caption intro__caption--main title">Взгляните на жизнь иначе!</b>
+          <div class="intro__download-container">
+
+              <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
+              <ul class="intro__application-list">
+                <li class="intro__application-item">
+                  <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
+                </li>
+                <li class="intro__application-item">
+                  <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
+                </li>
+                <li class="intro__application-item">
+                  <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
+                </li>
+              </ul>
+              <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
-          <ul class="intro__application-list application-list">
-            <li class="intro__application-item">
-              <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
-            </li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
+
       </section>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-
-
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
@@ -85,7 +86,7 @@
         <div class="page-wrapper">
           <div class="statistics__description">
             <div class="statistics__info">
-              <b class="statistics__title">Эффект на 24 часа!</b>
+              <b class="statistics__title">Эффект<br>на 24 часа!</b>
               <p class="statistics__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a href="#" class="statistics__link">Узнать больше об исследовании</a>
             </div>
@@ -97,7 +98,7 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="page-wrapper slider">
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item--current">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -117,9 +118,9 @@
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current">1</button>
-            <button class="slider__toggle">2</button>
-            <button class="slider__toggle">3</button>
+            <button class="slider__toggle slider__toggle--current"></button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle"></button>
           </p>
 
         </div>
@@ -147,7 +148,7 @@
             </ul>
           </section>
 
-          <section class="price__item slider__item">
+          <section class="price__item slider__item--current">
             <h3 class="visually-hidden">Стандартный тариф</h3>
             <div class="price__title">
               <span class="price__name">Стандарт</span>
@@ -187,9 +188,9 @@
         </div>
 
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle slider__toggle--current">2</button>
-          <button class="slider__toggle">3</button>
+          <button class="slider__toggle"></button>
+          <button class="slider__toggle slider__toggle--current"></button>
+          <button class="slider__toggle"></button>
         </p>
       </section>
 
@@ -205,7 +206,7 @@
               </div>
               <div class="contacts__item">
                 <b class="contacts__title">Пишите:</b>
-                <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__text contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="contacts__item">
                 <b class="contacts__title">Приезжайте в гости:</b>
@@ -222,26 +223,34 @@
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты в соцсетях</h2>
       <div class="page-wrapper">
-        <a class="main-footer__link">
-          <img class="main-footer__logo" src="img/logo-footer.svg" width="145" height="40" alt="Перейти на главную.">
-        </a>
+        <div class="main-footer__container">
+          <a class="main-footer__logo">
+            <svg width="59" height="40" viewBox="0 0 59 40" fill="#d22856" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z" /></svg>
+            <svg width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/></svg>
+          </a>
 
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

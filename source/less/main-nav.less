@@ -1,0 +1,63 @@
+.main-nav {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  padding: 22px 20px 21px;
+  fill: @white;
+
+  &--glasses {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @fade-white;
+  }
+}
+
+.main-nav__logo-image {
+  display: block;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  // display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  display: block;
+  color: @white;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  background-color: @navy-blue;
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: @pink;
+  }
+
+  &:active {
+    color: @fade-white;
+  }
+}
