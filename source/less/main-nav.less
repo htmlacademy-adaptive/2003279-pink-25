@@ -1,17 +1,13 @@
 .main-nav {
   background: rgba(0, 0, 0, 0.3);
-  width: 100%;
   margin: 0 auto;
 }
 
-.main-nav__container {
-  display: flex;
-  // justify-content: space-between;
-  min-height: 66px;
-  position: relative;
-
-  @media (min-width: @tablet-width) {
-    min-height: 110px;
+.main-nav__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -20,9 +16,13 @@
 }
 
 .main-nav__logo {
+  display: flex;
   position: relative;
   z-index: 10;
   fill: @white;
+  height: 66px;
+  max-width: 280px;
+  margin: 0 auto;
 
   &:hover,
   &:focus-visible {
@@ -31,6 +31,15 @@
 
   &:active {
     fill: @fade-white;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -64,6 +73,7 @@
 
   @media (min-width: @tablet-width) {
     top: 110px;
+    left: 0;
   }
 
   &::before {
@@ -71,16 +81,19 @@
     display: block;
     position: absolute;
     top: -69px;
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 68px;
     background-color: @navy-blue;
     box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    margin: 0 calc(-50vw + 50%);
 
     @media (min-width: @tablet-width) {
-      position: absolute;
       top: -110px;
       height: 109px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
     }
   }
 
@@ -98,7 +111,6 @@
 
 .main-nav__link {
   display: block;
-  margin: 0 calc(-50vw + 50%);
   margin-bottom: 1px;
   color: @white;
   font-size: 18px;
