@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
@@ -10,48 +11,55 @@
     <header class="main-header">
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <a class="main-nav__logo" href="index.html">
-          <svg class="main-nav__logo--glasses" width="59" height="40" viewBox="0 0 59 40" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"/></svg>
-          <svg class="main-nav__logo--pink" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/></svg>
-        </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+
+            <a class="main-nav__logo" href="index.html">
+              <svg class="main-nav__logo-mobile" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.55A1.29 1.29 0 0 1 1.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 0 1 1.27 23 1.27 1.27 0 0 1 0 21.61V1.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04ZM21.6 1.39A1.28 1.28 0 0 1 22.85 0a1.27 1.27 0 0 1 1.27 1.39V21.6A1.28 1.28 0 0 1 22.86 23a1.27 1.27 0 0 1-1.27-1.39V1.4ZM30.67 1.42A1.28 1.28 0 0 1 31.93.17h.34a1.54 1.54 0 0 1 1.29.74l13.6 17.4V1.36A1.24 1.24 0 0 1 48.39.12a1.23 1.23 0 0 1 1.23 1.24v20.3a1.14 1.14 0 0 1-1.15 1.17h-.13a1.7 1.7 0 0 1-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V1.42h-.05ZM55.94 1.39A1.28 1.28 0 0 1 57.2 0a1.27 1.27 0 0 1 1.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.29 1.29 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 0 1-1.26 1.27 1.26 1.26 0 0 1-1.26-1.27V1.4h-.01Z"/></svg>
+              <svg class="main-nav__logo-tablet" width="145" height="40" viewBox="0 0 145 40" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"/><path d="M71 18.55a1.29 1.29 0 0 1 1.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0 1 72.27 40 1.27 1.27 0 0 1 71 38.61V18.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04ZM92.6 18.39A1.28 1.28 0 0 1 93.85 17a1.27 1.27 0 0 1 1.27 1.39V38.6A1.28 1.28 0 0 1 93.86 40a1.27 1.27 0 0 1-1.27-1.39V18.4ZM101.67 18.42a1.28 1.28 0 0 1 1.26-1.25h.34a1.53 1.53 0 0 1 1.29.74l13.6 17.4V18.36a1.24 1.24 0 0 1 1.23-1.24 1.23 1.23 0 0 1 1.23 1.24v20.3a1.16 1.16 0 0 1-.32.83 1.13 1.13 0 0 1-.83.34h-.13a1.69 1.69 0 0 1-1.31-.78l-13.91-17.8v17.4a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V18.42h-.05ZM126.94 18.39A1.28 1.28 0 0 1 128.2 17a1.27 1.27 0 0 1 1.26 1.39v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.3 1.3 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.33 1.33 0 0 1-.4.92 1.29 1.29 0 0 1-.94.36 1.23 1.23 0 0 1-1-.58l-8.36-10.46-4.83 4.85v4.88a1.28 1.28 0 0 1-.78 1.17 1.26 1.26 0 0 1-1.74-1.17V18.4h-.01Z"/></svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+              </li>
+            </ul>
+
+        </div>
       </nav>
 
       <section class="intro intro--main">
-        <div class="page-wrapper">
-          <b class="intro__caption intro__caption--main title">Взгляните на жизнь иначе!</b>
-          <div class="intro__download-container">
+        <b class="intro__caption intro__caption--main title">Взгляните на жизнь иначе!</b>
 
-              <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
-              <ul class="intro__application-list">
-                <li class="intro__application-item">
-                  <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
-                </li>
-                <li class="intro__application-item">
-                  <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
-                </li>
-                <li class="intro__application-item">
-                  <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
-                </li>
-              </ul>
-              <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="intro__download">
+          <div class="page-wrapper">
+            <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
+            <ul class="intro__application-list">
+              <li class="intro__application-item">
+                <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
+              </li>
+              <li class="intro__application-item">
+                <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
+              </li>
+              <li class="intro__application-item">
+                <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
+              </li>
+            </ul>
+            <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
-
       </section>
     </header>
 
@@ -63,21 +71,24 @@
         <div class="page-wrapper">
           <b class="advantages__first-caption title">Устали от серости мегаполиса?</b>
           <b class="advantages__second-caption title">Нам есть, что вам предложить!</b>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <img class="advantages__image" src="img/advantages-image.png" width="158" height="277" alt="Фото на мобильном телефоне.">
+
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <img class="advantages__image" src="img/advantages-first-image.png" width="294" height="301" alt="Изображение мобильного телефона">
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <img class="advantages__image" src="img/advantages-second-image.png" width="294" height="301" alt="Изображение мобильного телефона">
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <img class="advantages__image" src="img/advantages-third-image.png" width="294" height="301" alt="Изображение мобильного телефона">
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
         </div>
       </section>
 
@@ -86,7 +97,7 @@
         <div class="page-wrapper">
           <div class="statistics__description">
             <div class="statistics__info">
-              <b class="statistics__title">Эффект<br>на 24 часа!</b>
+              <b class="statistics__title">Эффект на 24 часа!</b>
               <p class="statistics__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a href="#" class="statistics__link">Узнать больше об исследовании</a>
             </div>
@@ -96,19 +107,9 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="page-wrapper slider">
+        <div class="slider page-wrapper">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item--current">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -136,8 +137,8 @@
               <span class="price__cost">1,99 USD</span>
             </div>
             <ul class="price__feature-list">
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Розовый фильтр</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Розовый фильтр</span>
               </li>
               <li class="price__feature-item">
                 <span class="price__feature">Смайлики</span>
@@ -148,18 +149,18 @@
             </ul>
           </section>
 
-          <section class="price__item slider__item--current">
+          <section class="price__item slider__item--current price__item--popular">
             <h3 class="visually-hidden">Стандартный тариф</h3>
             <div class="price__title">
               <span class="price__name">Стандарт</span>
               <span class="price__cost">3,99 USD</span>
             </div>
             <ul class="price__feature-list">
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Розовый фильтр</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Розовый фильтр</span>
               </li>
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Смайлики</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Смайлики</span>
               </li>
               <li class="price__feature-item">
                 <span class="price__feature">Комментарии</span>
@@ -174,14 +175,14 @@
               <span class="price__cost">9,99 USD</span>
             </div>
             <ul class="price__feature-list">
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Розовый фильтр</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Розовый фильтр</span>
               </li>
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Смайлики</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Смайлики</span>
               </li>
-              <li class="price__feature-item">
-                <span class="price__feature price__feature--yes">Комментарии</span>
+              <li class="price__feature-item price__feature-item--yes">
+                <span class="price__feature">Комментарии</span>
               </li>
             </ul>
           </section>
@@ -200,17 +201,17 @@
           <address class="contacts__details">
             <b class="contacts__caption title">Остались вопросы? Свяжитесь с нами!</b>
             <div class="contacts__list">
-              <div class="contacts__item">
+              <div class="contacts__item contacts__item--first">
                 <b class="contacts__title">Звоните:</b>
                 <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </div>
-              <div class="contacts__item">
+              <div class="contacts__item contacts__item--second">
                 <b class="contacts__title">Пишите:</b>
                 <a class="contacts__text contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
-              <div class="contacts__item">
+              <div class="contacts__item contacts__item--third">
                 <b class="contacts__title">Приезжайте в гости:</b>
-                <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+                <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
               </div>
 
             </div>

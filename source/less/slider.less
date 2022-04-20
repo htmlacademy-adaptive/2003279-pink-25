@@ -1,8 +1,12 @@
 .slider__toggles {
   margin: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: @tablet-width-only) {
+    display: flex;
+  }
 }
 
 .slider__toggle {
@@ -30,13 +34,5 @@
   &--current {
     outline: 3px solid @dark-gray;
     background-color: @white;
-  }
-}
-
-.slider__item {
-  display: none;
-
-  &--current {
-    display: block;
   }
 }

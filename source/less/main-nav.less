@@ -1,8 +1,14 @@
 .main-nav {
   background: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  position: relative;
+  margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__toggle {
@@ -10,13 +16,13 @@
 }
 
 .main-nav__logo {
-  display: inline-block;
-  padding: 22px 20px 21px;
+  display: flex;
+  position: relative;
+  z-index: 10;
   fill: @white;
-
-  &--glasses {
-    display: none;
-  }
+  height: 66px;
+  max-width: 280px;
+  margin: 0 auto;
 
   &:hover,
   &:focus-visible {
@@ -26,24 +32,86 @@
   &:active {
     fill: @fade-white;
   }
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
-.main-nav__logo-image {
-  display: block;
+.main-nav__logo-mobile {
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
+
+.main-nav__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-top: 27px;
+  }
+}
+
 
 .main-nav__list {
   list-style-type: none;
   // display: none;
   position: absolute;
-  top: 0;
+  top: 69px;
   left: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    top: 110px;
+    left: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -69px;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background-color: @navy-blue;
+    box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @media (min-width: @tablet-width) {
+      top: -110px;
+      height: 109px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-left: auto;
+    max-width: 620px;
+  }
 }
 
 .main-nav__link {
   display: block;
+  margin-bottom: 1px;
   color: @white;
   font-size: 18px;
   line-height: 32px;
@@ -51,6 +119,9 @@
   background-color: @navy-blue;
   box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
 
   &:hover,
   &:focus-visible {
@@ -59,5 +130,14 @@
 
   &:active {
     color: @fade-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    background: none;
+    box-shadow: none;
   }
 }
