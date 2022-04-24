@@ -1,0 +1,31 @@
+.fieldset-contacts {
+  @media (min-width: @tablet-width) {
+    padding: 46px 60px 27px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 940px;
+    display: flex;
+  }
+}
+
+.fieldset-contacts .form__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.fieldset-contacts .form__item:not(:last-child) {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.fieldset-contacts .form__legend {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}

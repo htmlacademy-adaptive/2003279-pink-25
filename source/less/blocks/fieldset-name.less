@@ -1,0 +1,21 @@
+.fieldset-name {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    outline: none;
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 470px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+}
+
+.fieldset-name .form__item:not(:last-child) {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+}
