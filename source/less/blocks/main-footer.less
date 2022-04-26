@@ -1,5 +1,3 @@
-
-
 .main-footer__container {
   display: flex;
   flex-direction: column;
@@ -13,6 +11,10 @@
     flex-direction: row;
     min-height: 127px;
     margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 197px;
   }
 }
 
@@ -30,5 +32,9 @@
   @media (min-width: @tablet-width) {
     align-self: flex-start;
     margin-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
   }
 }

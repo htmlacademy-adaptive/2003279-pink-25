@@ -1,0 +1,23 @@
+.form-section__caption {
+  color: @dark-gray;
+  margin-top: 44px;
+
+  & span {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 45px;
+    max-width: 505px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+    max-width: 760px;
+  }
+}
