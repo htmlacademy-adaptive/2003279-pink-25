@@ -1,7 +1,27 @@
+.reviews {
+  min-height: 344px;
+  padding-top: 41px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-height: 347px;
+    padding-top: 100px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 405px;
+    padding: 0;
+  }
+}
+
+.reviews__list {
+  position: relative;
+}
+
 .reviews__item {
   margin: 0;
-  margin-top: 50px;
-  margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -71,7 +91,6 @@
 
 .reviews__text {
   margin: 0;
-  margin-top: 31px;
   color: @dark-gray;
   font-size: 14px;
   line-height: 30px;
@@ -86,12 +105,117 @@
 }
 
 .reviews__toggles {
-  margin: 0;
-  margin-top: 44px;
-  padding: 0;
+  margin-top: 34px;
+  margin-bottom: 0;
+
+
+  @media (min-width: @tablet-width) {
+    margin-top: 39px;
+  }
 }
 
 .reviews__prev,
 .reviews__next {
   display: none;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: none;
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: #7e868f;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: #eaebec;
+    }
+  }
+}
+
+.reviews__prev {
+  @media (min-width: @desktop-width) {
+    left: 0;
+    top: 223px;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: -2px;
+      width: 30px;
+      height: 2px;
+      background-color: #bfc3c7;
+      transform: rotate(-45deg);
+      border-radius: 1px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 75%;
+      left: -2px;
+      width: 30px;
+      height: 2px;
+      background-color: #bfc3c7;
+      transform: rotate(45deg);
+      border-radius: 1px;
+    }
+  }
+}
+
+.reviews__next {
+  @media (min-width: @desktop-width) {
+    right: 0;
+    top: 223px;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: -2px;
+      width: 30px;
+      height: 2px;
+      background-color: #bfc3c7;
+      transform: rotate(45deg);
+      border-radius: 1px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 75%;
+      left: -2px;
+      width: 30px;
+      height: 2px;
+      background-color: #bfc3c7;
+      transform: rotate(-45deg);
+      border-radius: 1px;
+    }
+  }
 }
