@@ -17,7 +17,7 @@
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  right: calc(((100vw - 280px) / 2) - 20px);
   z-index: 15;
   width: 92px;
   height: 66px;
@@ -27,6 +27,7 @@
 
   @media (min-width: @tablet-width) {
     height: 110px;
+    right: calc((100vw - 620px) / 2);
   }
 
   @media (min-width: @desktop-width) {
@@ -35,7 +36,7 @@
 }
 
 .main-nav--closed {
-  & .site-list {
+  & .main-nav__list {
     @media (max-width: @tablet-width-only) {
       display: none;
     }
@@ -182,20 +183,20 @@
   }
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .main-nav--nojs {
-  @media (max-width: @tablet-width-only) {
-    & .main-nav__wrapper {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    @media (max-width: @tablet-width-only) {
       position: relative;
       background-color: @dark-gray;
     }
+  }
 
-    & .site-list {
+  .main-nav__list {
+    @media (max-width: @tablet-width-only) {
       display: block;
       position: relative;
     }
@@ -217,5 +218,58 @@
     @media (min-width: @desktop-width) {
       display: none;
     }
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: static;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-left: auto;
+    max-width: 620px;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @dark-gray;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid @black;
+
+  &[href]:hover {
+    color: @pink;
+  }
+
+  &[href]:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 11px 0;
   }
 }

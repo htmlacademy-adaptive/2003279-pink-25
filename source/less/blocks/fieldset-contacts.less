@@ -1,6 +1,10 @@
 .fieldset-contacts {
+  padding-top: 32px;
+  padding-bottom: 24px;
+
   @media (min-width: @tablet-width) {
-    padding: 46px 60px 27px;
+    padding-top: 27px;
+    padding-bottom: 26px;
     order: 1;
   }
 
@@ -8,24 +12,98 @@
     flex-basis: 940px;
     display: flex;
   }
-}
 
-.fieldset-contacts .form__list {
-  @media (min-width: @desktop-width) {
-    display: flex;
+  .form__fieldset {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
-}
 
-.fieldset-contacts .form__item:not(:last-child) {
-  margin-bottom: 19px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 31px;
+  .form__list {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-}
 
-.fieldset-contacts .form__legend {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+  .form__item:not(:last-child) {
+    margin-bottom: 19px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  .form__legend {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .form__label {
+    @media (min-width: @tablet-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: @gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 371px;
+    }
+  }
+
+  .form__label-name {
+    @media (min-width: @tablet-width) {
+      order: 2;
+      margin-top: 12px;
+    }
+  }
+
+  .form__input {
+    @media (min-width: @tablet-width) {
+      align-self: stretch;
+      position: relative;
+      padding-right: 80px;
+    }
+
+    &[type="tel"] {
+      @media (min-width: @tablet-width) {
+        background: url("../../img/form-phone-icon.svg") no-repeat 458px center;
+        z-index: 3;
+      }
+
+      @media (min-width: @desktop-width) {
+        background-position-x: 330px;
+      }
+    }
+
+    &[type="email"] {
+      @media (min-width: @tablet-width) {
+        background: url("../../img/form-mail-icon.svg") no-repeat 458px center;
+        z-index: 3;
+      }
+
+      @media (min-width: @desktop-width) {
+        background-position-x: 330px;
+      }
+    }
   }
 }

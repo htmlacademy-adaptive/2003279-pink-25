@@ -1,17 +1,19 @@
 .upload {
-  background-color: @light-gray;
   padding-top: 20px;
   padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
     padding-top: 57px;
     padding-bottom: 57px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 28px;
+    background-color: @light-gray;
+    column-gap: 0;
   }
 }
 
@@ -39,7 +41,6 @@
 }
 
 .upload__buttons {
-  justify-self: center;
   align-self: end;
 
   @media (min-width: @desktop-width) {
@@ -50,6 +51,7 @@
 
 .upload__button {
   width: 280px;
+  background-color: transparent;
 
   &:not(:last-child) {
     margin-bottom: 12px;

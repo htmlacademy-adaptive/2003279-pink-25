@@ -1,14 +1,30 @@
 .fieldset-name {
+  padding-top: 35px;
+  padding-bottom: 42px;
+
   @media (min-width: @tablet-width) {
-    padding: 0;
-    outline: none;
+    padding-top: 72px;
+    padding-bottom: 26px;
     order: -1;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 470px;
     padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 32px;
+
     box-sizing: border-box;
+  }
+}
+
+.fieldset-name .form__fieldset {
+  border: none;
+}
+
+.fieldset-name .form__wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
   }
 }
 
@@ -17,5 +33,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
   }
 }

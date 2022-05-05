@@ -1,9 +1,37 @@
 .fieldset-textarea {
+  padding-top: 38px;
+  padding-bottom: 50px;
+
   @media (min-width: @tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 35px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 940px;
+    padding-bottom: 0;
+  }
+}
+
+.fieldset-textarea .form__legend {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    background-color: @white;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.fieldset-textarea .form__fieldset {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 51px;
+    padding-top: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 45px;
   }
 }
