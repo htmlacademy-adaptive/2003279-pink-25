@@ -2,7 +2,7 @@
   color: @dark-gray;
   margin-top: 44px;
 
-  & span {
+  span {
     display: none;
 
     @media (min-width: @tablet-width) {
@@ -12,12 +12,23 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 100px;
-    margin-bottom: 45px;
     max-width: 505px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 50px;
     max-width: 760px;
+  }
+}
+
+.form-section__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
   }
 }
