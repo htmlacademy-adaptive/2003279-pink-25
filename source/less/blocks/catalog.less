@@ -110,23 +110,6 @@
     grid-column: 1 / -1;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 13px;
-    height: 12px;
-    background: url("../img/heart.svg") no-repeat;
-    position: absolute;
-    top: 6px;
-    right: -100%;
-    left: 0;
-
-    @media (min-width: @tablet-width) {
-      right: 0;
-      left: auto;
-    }
-  }
-
   &--panorama {
     @media (min-width: @tablet-width) {
       grid-column: 3 / 4;
@@ -138,4 +121,21 @@
 .catalog__like-counter {
   display: block;
   margin: 0;
+}
+
+.catalog__like-button {
+  display: block;
+  border: none;
+  width: 13px;
+  height: 12px;
+  background: url("../../img/icons/heart.svg") no-repeat;
+  position: absolute;
+  top: 6px;
+  right: -100%;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+    left: auto;
+  }
 }
