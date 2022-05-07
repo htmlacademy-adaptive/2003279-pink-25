@@ -1,6 +1,11 @@
 .intro {
   &--main {
-    background: url("../img/hand.png") no-repeat 50% 88px;
+    background: url("../../img/main-header/hand-mobile.png") no-repeat 50% 88px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/main-header/hand-mobile@2x.png");
+      background-size: auto 286px;
+    }
 
     @media (min-width: @tablet-width) {
       max-width: 620px;
@@ -8,7 +13,12 @@
 
       padding-top: 93px;
       padding-bottom: 114px;
-      background: url("../img/hand-tablet.png") no-repeat 50% 100%;
+      background: url("../../img/main-header/hand-tablet.png") no-repeat 50% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/main-header/hand-tablet@2x.png");
+        background-size: auto 545px;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -16,7 +26,12 @@
       margin: 0 auto;
       padding-top: 99px;
       padding-bottom: 125px;
-      background: url("../img/hand-desktop.png") no-repeat 0 100%;
+      background: url("../../img/main-header/hand-desktop.png") no-repeat 0 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/main-header/hand-desktop@2x.png");
+        background-size: auto 645px;
+      }
     }
   }
 }
@@ -126,21 +141,21 @@
   display: block;
   width: 47px;
   height: 56px;
-  background-image: url("../img/apple-logo.svg");
+  background-image: url("../../img/icons/apple-logo.svg");
 }
 
 .intro__android-icon {
   display: block;
   width: 43px;
   height: 47px;
-  background-image: url("../img/android-logo.svg");
+  background-image: url("../../img/icons/android-logo.svg");
 }
 
 .intro__windows-icon {
   display: block;
   width: 44px;
   height: 41px;
-  background-image: url("../img/microsoft-logo.svg");
+  background-image: url("../../img/icons/microsoft-logo.svg");
 }
 
 .intro__description {
