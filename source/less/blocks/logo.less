@@ -1,0 +1,34 @@
+.logo__desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 27px;
+  }
+
+  &--footer {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.logo__glasses {
+  display: none;
+  margin-right: 12px;
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    display: block;
+    margin-top: 27px;
+  }
+}
+
+.logo__word {
+  align-self: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

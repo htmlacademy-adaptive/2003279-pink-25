@@ -77,10 +77,6 @@
   border: none;
   padding: 0;
   background-color: transparent;
-
-  @media (min-width: @tablet-width) {
-    width: fit-content;
-  }
 }
 
 .tool-list__label {
@@ -161,24 +157,7 @@
     opacity: none;
   }
 
-  &--crop {
-    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-      width: 22px;
-      height: 22px;
-    }
-  }
-
-  &--fill {
-    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-      width: 24px;
-      height: 22px;
-    }
-  }
-
-  &--contrast {
-    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-      width: 16px;
-      height: 16px;
-    }
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    transform: scale(0.5);
   }
 }
