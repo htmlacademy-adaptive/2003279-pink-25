@@ -16,9 +16,9 @@
   background: url("../img/statistics-image.svg") no-repeat 0 100%;
 
   @media (min-width: @desktop-width) {
-    min-height: 429px;
+    min-height: 434px;
     background-size: 298px auto;
-    background-position: 0 17px;
+    background-position: 0 21px;
   }
 }
 
@@ -29,6 +29,8 @@
 
   @media (min-width: @desktop-width) {
     width: 534px;
+    margin-top: 114px;
+    margin-right: 36px;
   }
 }
 
@@ -51,6 +53,14 @@
   display: block;
   margin: 0;
   margin-bottom: 10px;
+
+  br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
