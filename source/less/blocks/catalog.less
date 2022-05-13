@@ -1,5 +1,4 @@
 .catalog__caption {
-  max-width: 250px;
   margin: 44px auto 50px;
 
   @media (min-width: @tablet-width) {
@@ -9,7 +8,27 @@
 
   @media (min-width: @desktop-width) {
     max-width: 575px;
-    margin: 100px auto 97px;
+    margin: 92px auto 88px;
+  }
+
+  &--first {
+    br {
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--second {
+    margin: 37px auto 43px;
+
+    @media (min-width: @tablet-width) {
+      margin: 66px auto 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 60px auto 66px;
+    }
   }
 }
 
@@ -22,6 +41,10 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(auto-fill, 300px);
     gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    row-gap: 54px;
   }
 }
 
@@ -46,23 +69,48 @@
     width: 300px;
     height: 300px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
 }
 
 .catalog__description {
   background-color: @light-gray;
-  padding: 18px;
+  padding: 17px;
+  padding-right: 5px;
+  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr auto;
-    padding: 23px 30px;
+    padding: 23px 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
   }
 
   &--panorama {
     @media (min-width: @tablet-width) {
       grid-template-columns: auto 1fr 120px;
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: @desktop-width) {
       padding-bottom: 0;
+      // padding-top: 22px;
+    }
+
+    .catalog__user-text {
+      @media (max-width: @mobile-width-only) {
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: @desktop-width) {
+        min-height: 35px;
+      }
     }
   }
 }
@@ -81,7 +129,10 @@
   font-weight: 300;
   text-transform: uppercase;
   color: @dark-gray;
-  margin-left: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 4px;
+  }
 }
 
 .catalog__user-text {
@@ -92,8 +143,14 @@
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
-    min-height: 48px;
+    min-height: 50px;
     grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 47px;
+    margin-bottom: 13px;
   }
 }
 
@@ -114,6 +171,7 @@
     @media (min-width: @tablet-width) {
       grid-column: 3 / 4;
       grid-row: 1 / 2;
+      margin-top: 2px;
     }
   }
 }

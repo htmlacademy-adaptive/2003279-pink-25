@@ -1,5 +1,6 @@
 .form {
   display: block;
+  padding-bottom: 1px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -100,7 +101,7 @@
   border: 2px solid @gray;
   border-radius: 1px;
   padding: 14px 20px;
-  min-width: 276px;
+  min-width: 280px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -146,14 +147,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 496px;
-    height: 193px;
+    width: 498px;
+    height: 196px;
     margin: 0 auto;
+    padding: 16px 19px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 816px;
-    height: 124px;
+    width: 819px;
+    height: 128px;
   }
 
   &:hover {
@@ -175,14 +177,15 @@
     display: flex;
     justify-content: space-between;
     min-width: 620px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 31px;
+    margin-bottom: 47px;
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 940px;
     margin-bottom: 0;
+    margin-top: 64px;
   }
 }
 
@@ -193,6 +196,8 @@
   margin-bottom: 16px;
   text-transform: uppercase;
   color: @dark-gray;
+  font-size: 14px;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
