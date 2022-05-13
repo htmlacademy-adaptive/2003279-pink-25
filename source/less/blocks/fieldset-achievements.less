@@ -1,7 +1,7 @@
 .fieldset-achievements {
   background-color: @light-gray;
   padding-top: 38px;
-  padding-bottom: 42px;
+  padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
@@ -15,7 +15,11 @@
   }
 
   .form__legend {
-    margin-bottom: 47px;
+    margin-bottom: 43px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 48px;
+    }
   }
 
   .form__item:nth-child(1) {
@@ -57,7 +61,7 @@
 
 .fieldset-achievements .form__fieldset {
   @media (min-width: @tablet-width) {
-    padding-bottom: 48px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,13 +74,13 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "shark chuck tower" "beach souvenir hotel";
-    column-gap: 57px;
+    column-gap: 54px;
     row-gap: 52px;
   }
 }
 
 .fieldset-achievements .form__item:not(:last-child) {
-  margin-bottom: 43px;
+  margin-bottom: 52px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;

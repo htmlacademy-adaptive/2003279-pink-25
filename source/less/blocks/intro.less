@@ -34,6 +34,18 @@
       }
     }
   }
+
+  &--catalog,
+  &--form {
+    .title {
+      line-height: 33px;
+
+      @media (min-width: @tablet-width) {
+        font-size: 50px;
+        line-height: 68px;
+      }
+    }
+  }
 }
 
 .intro__download {
@@ -76,25 +88,25 @@
 
     @media (min-width: @tablet-width) {
       max-width: 490px;
-      margin-top: 81px;
+      margin-top: 66px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 747px;
-      margin-top: 74px;
+      margin-top: 59px;
     }
   }
 
   &--catalog {
-    margin-top: 36px;
+    margin-top: 29px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 81px;
+      margin-top: 66px;
       max-width: 360px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 74px;
+      margin-top: 59px;
     }
   }
 }
@@ -119,7 +131,7 @@
   margin-bottom: 21px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
@@ -128,6 +140,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;
+    align-items: flex-end;
   }
 }
 
@@ -146,6 +159,7 @@
 
 .intro__android-icon {
   display: block;
+  margin-top: 2px;
   width: 43px;
   height: 47px;
   background-image: url("../../img/icons/android-logo.svg");
@@ -155,6 +169,7 @@
   display: block;
   width: 44px;
   height: 41px;
+  margin-top: 6px;
   background-image: url("../../img/icons/microsoft-logo.svg");
 }
 

@@ -73,11 +73,11 @@
     clip-path: polygon(0 0, 0 100%, 100% 0);
 
     @media (min-width: @tablet-width) {
-      height: 54px;
+      height: 53px;
     }
 
-    @media (min-width: @tablet-width) {
-      height: 89px;
+    @media (min-width: @desktop-width) {
+      height: 100px;
     }
   }
 }
@@ -93,6 +93,7 @@
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     max-width: 310px;
     margin-left: auto;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
@@ -169,8 +170,17 @@
   color: @dark-gray;
   text-align: center;
 
+  br {
+    display: none;
+
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      display: block;
+    }
+  }
+
   @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     text-align: start;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {

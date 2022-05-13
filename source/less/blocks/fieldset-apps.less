@@ -1,11 +1,11 @@
 .fieldset-apps {
   background-color: @light-gray;
   padding-top: 38px;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
-    padding-bottom: 26px;
+    padding-bottom: 31px;
     order: 0;
     background-color: @white;
   }
@@ -19,20 +19,24 @@
 }
 
 .fieldset-apps .form__item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 46px;
+    // margin-bottom: 46px;
   }
 }
 
 .fieldset-apps .form__fieldset {
   @media (min-width: @tablet-width) {
-    padding-bottom: 54px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 72px;
+    padding-left: 71px;
     padding-right: 70px;
     padding-bottom: 58px;
     padding-top: 59px;
@@ -41,11 +45,23 @@
 }
 
 .fieldset-apps .form__legend {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     display: inline-block;
-    top: -10px;
-    left: 32px;
+    top: -9px;
+    left: 31px;
     background-color: @white;
+  }
+}
+
+.fieldset-apps .control {
+  padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 61px;
   }
 }

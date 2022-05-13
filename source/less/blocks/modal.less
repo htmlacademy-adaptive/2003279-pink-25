@@ -41,7 +41,7 @@
     background: linear-gradient(to bottom, @white 60%, @light-gray 60%);
 
     @media (min-width: @tablet-width) {
-      padding: 40px 70px 52px;
+      padding: 40px 70px 50px;
       background: linear-gradient(to bottom, @white 62%, @light-gray 62%);
     }
 
@@ -74,6 +74,11 @@
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 23px;
+    max-width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 350px;
   }
 }
 
@@ -115,7 +120,9 @@
   margin-right: auto;
 
   &--failure {
-    margin-top: 41px;
+    @media (min-width: @tablet-width) {
+      margin-top: 33px;
+    }
 
     @media (min-width: @desktop-width) {
       margin-top: 113px;
@@ -124,5 +131,14 @@
 
   &--success {
     margin-top: 84px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 80px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 88px;
+      min-width: 460px;
+    }
   }
 }

@@ -5,13 +5,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 45px;
+    column-gap: 34px;
     padding-top: 57px;
-    padding-bottom: 57px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 28px;
+    padding-bottom: 57px;
     background-color: @light-gray;
     column-gap: 0;
   }
@@ -41,16 +41,22 @@
   padding: 0;
 
   @media (max-width: @tablet-width-only) {
-    justify-self: center;
+    // justify-self: center;
   }
 }
 
 .upload__buttons {
   align-self: end;
 
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-self: start;
+    margin-left: 0;
   }
 }
 
@@ -60,6 +66,10 @@
 
   &:not(:last-child) {
     margin-bottom: 12px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 24px;
+    }
 
     @media (min-width: @desktop-width) {
       margin-bottom: 0;

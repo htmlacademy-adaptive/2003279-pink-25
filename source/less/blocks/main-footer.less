@@ -4,17 +4,18 @@
   justify-content: space-between;
   align-items: center;
   min-height: 207px;
-  margin-top: 49px;
+  margin-top: 38px;
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
+    justify-content: flex-start;
     flex-direction: row;
     min-height: 127px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 197px;
+    min-height: 194px;
   }
 }
 
@@ -42,13 +43,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 70px;
+    margin-top: 72px;
   }
 
   .logo__glasses {
     display: inline-block;
     fill: @pink;
     margin-top: 0;
+    margin-right: 9px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 8px;
+    }
 
     @media (min-width: @desktop-width) {
       display: none;
