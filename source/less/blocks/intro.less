@@ -50,7 +50,7 @@
 
 .intro__download {
   @media (max-width: @mobile-width-only) {
-    background-color: @dark-gray;
+    background-color: @blue-black;
     padding-top: 28px;
     padding-bottom: 31px;
     padding-left: 20px;
@@ -61,10 +61,10 @@
 .intro__caption {
   display: block;
   margin: 0 auto;
-  margin-top: 23px;
   color: @white;
 
   &--main {
+    margin-top: 23px;
     max-width: 230px;
     padding-bottom: 315px;
 
@@ -84,29 +84,33 @@
   }
 
   &--form {
-    margin-top: 29px;
+    padding-top: 29px;
+    padding-bottom: 43px;
+    max-width: 280px;
 
     @media (min-width: @tablet-width) {
       max-width: 490px;
-      margin-top: 66px;
+      padding-top: 66px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 747px;
-      margin-top: 59px;
+      padding-top: 59px;
     }
   }
 
   &--catalog {
-    margin-top: 29px;
+    padding-top: 29px;
+    padding-bottom: 77px;
+    max-width: 280px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 66px;
+      padding-top: 66px;
       max-width: 360px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 59px;
+      padding-top: 59px;
     }
   }
 }

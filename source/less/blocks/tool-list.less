@@ -19,14 +19,18 @@
 .tool-list__item {
   position: relative;
 
+  &:hover:not(&--active) {
+    .tool-list__icon {
+      @media (max-width: @mobile-width-only) {
+        fill: fade(@dark-gray, 50%);
+      }
+    }
+  }
+
   &:not(:last-child) {
     @media (max-width: @mobile-width-only) {
       margin-right: 35px;
     }
-
-    // @media (min-width: @tablet-width) {
-    //   margin-bottom: 17px;
-    // }
   }
 
   @media (min-width: @tablet-width) {
@@ -97,14 +101,13 @@
       width: 280px;
       height: 50px;
       position: absolute;
-      top: 59px;
-      left: -40px;
+      top: 58px;
+      left: -37px;
     }
   }
 
   @media (min-width: @tablet-width) {
     width: 202px;
-    margin-bottom: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,30 +116,31 @@
 }
 
 .tool-list__range {
+  position: relative;
   width: 240px;
   appearance: none;
   background-color: @dark-gray;
   height: 2px;
 
-  &::-moz-range-thumb {
-    appearance: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 2px solid @pink;
-    box-sizing: border-box;
-    background-color: @white;
-  }
+  // &::-moz-range-thumb {
+  //   appearance: none;
+  //   width: 14px;
+  //   height: 14px;
+  //   border-radius: 50%;
+  //   border: 2px solid @pink;
+  //   box-sizing: border-box;
+  //   background-color: @white;
+  // }
 
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 2px solid @pink;
-    box-sizing: border-box;
-    background-color: @white;
-  }
+  // &::-webkit-slider-thumb {
+  //   appearance: none;
+  //   width: 14px;
+  //   height: 14px;
+  //   border-radius: 50%;
+  //   border: 2px solid @pink;
+  //   box-sizing: border-box;
+  //   background-color: @white;
+  // }
 
   @media (max-width: @mobile-width-only) {
     position: absolute;
@@ -154,6 +158,32 @@
 
   @media (min-width: @desktop-width) {
     width: 288px;
+  }
+}
+
+.tool-list__range-button {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 14px;
+  height: 14px;
+  background-color: @white;
+  border: 2px solid @pink;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+
+  &--fill {
+    right: 163px;
+  }
+
+  &--contrast {
+    right: 92px;
+  }
+
+  &:active {
+    background-color: @pink;
   }
 }
 

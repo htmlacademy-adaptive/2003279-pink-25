@@ -2,6 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="favicon.ico" rel="icon">
     <link href="img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
@@ -63,13 +66,13 @@
         <h2 class="visually-hidden">Каталог фотографий пользователей</h2>
 
 
-          <b class="catalog__caption catalog__caption--first subtitle">Взгляните на фотографии, которые <br>выкладывают пользователи!<br> Видите, как не хватает ваших?</b>
+          <b class="catalog__caption catalog__caption--first subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</b>
 
           <div class="catalog__item catalog-panorama">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-user-photo/panorama-desktop.webp 1x, img/catalog-user-photo/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog-user-photo/panorama-tablet.webp 1x, img/catalog-user-photo/panorama-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/catalog-user-photo/panorama-mobile.webp" srcset="img/catalog-user-photo/panorama-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-user-photo/panorama-mobile.webp, img/catalog-user-photo/panorama-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)" srcset="img/catalog-user-photo/panorama-desktop.jpg 1x, img/catalog-user-photo/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/catalog-user-photo/panorama-tablet.jpg 1x, img/catalog-user-photo/panorama-tablet@2x.jpg 2x">
@@ -79,7 +82,7 @@
               <div class="catalog__description catalog__description--panorama">
                 <cite class="catalog__user-name">Анна</cite>
                 <time class="catalog__user-date" datetime="2022-04-06T14:55-03:00">(5 минут назад)</time>
-                <p class="catalog__user-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbspпрямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="catalog__user-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="catalog__user-like catalog__user-like--panorama">
                   <span class="catalog__like-counter">Нравится: <span>215</span></span>
                   <button class="catalog__like-button" type="button"></button>
@@ -195,9 +198,9 @@
             </li>
           </ul>
         </div>
+        <b class="catalog__caption catalog__caption--second subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</b>
       </section>
 
-      <b class="catalog__caption catalog__caption--second subtitle">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</b>
 
       <section class="upload-container">
         <div class="page-wrapper">
@@ -217,21 +220,25 @@
                       <use href="img/sprite.svg#crop-tool"></use>
                     </svg>
                   </button>
-                  <label class="tool-list__label tool-list__label--active">
+                  <div class="tool-list__label tool-list__label--active">
                     <span class="visually-hidden">Инструмент кадрирования</span>
-                    <input class="tool-list__range" type="range" name="crop-tool">
-                  </label>
+                    <div class="tool-list__range">
+                      <button class="tool-list__range-button tool-list__range-button--crop" type="button"></button>
+                    </div>
+                  </div>
                 </li>
                 <li class="tool-list__item">
                   <button class="tool-list__button" type="button">
                     <svg class="tool-list__icon tool-list__icon--fill" width="48" height="43">
-                      <use href="img/sprite.svg#fill-tool">
+                      <use href="img/sprite.svg#fill-tool"></use>
                     </svg>
                   </button>
-                  <label class="tool-list__label">
+                  <div class="tool-list__label">
                     <span class="visually-hidden">Инструмент заливки</span>
-                    <input class="tool-list__range" type="range" name="fill-tool">
-                  </label>
+                    <div class="tool-list__range">
+                      <button class="tool-list__range-button tool-list__range-button--fill" type="button"></button>
+                    </div>
+                  </div>
                 </li>
                 <li class="tool-list__item">
                   <button class="tool-list__button" type="button">
@@ -239,10 +246,12 @@
                       <use href="img/sprite.svg#contrast-tool"></use>
                     </svg>
                   </button>
-                  <label class="tool-list__label">
+                  <div class="tool-list__label">
                     <span class="visually-hidden">Инструмент контраста</span>
-                    <input class="tool-list__range" type="range" name="contrast-tool">
-                  </label>
+                    <div class="tool-list__range">
+                      <button class="tool-list__range-button tool-list__range-button--contrast" type="button"></button>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -259,14 +268,14 @@
       <h2 class="visually-hidden">Контакты в соцсетях</h2>
       <div class="page-wrapper">
         <div class="main-footer__container">
-          <a class="main-footer__logo" href="index.html">
+          <a class="main-footer__logo logo" href="index.html">
             <svg class="logo__glasses" width="59" height="40">
               <use href="img/sprite.svg#logo-glasses"></use>
             </svg>
             <svg class="logo__word" width="74" height="23">
               <use href="img/sprite.svg#logo-word"></use>
             </svg>
-            <svg class="logo__desktop--footer" width="147" height="40">
+            <svg class="logo__desktop-footer" width="147" height="40">
               <use href="img/sprite.svg#logo-desktop-footer"></use>
             </svg>
           </a>
