@@ -5,13 +5,23 @@
     display: block;
     margin-top: 27px;
   }
+}
 
-  &--footer {
-    display: none;
+.logo__desktop-footer {
+  display: none;
 
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
+  &:hover,
+  &:focus-visible {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @dark-gray;
+    opacity: 0.3;
   }
 }
 

@@ -1,7 +1,7 @@
 .main-header {
   background-image: url("../../img/main-header/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: left 50% bottom 270px;
   background-color: @blue-black;
   color: @white;
   min-height: 733px;
@@ -14,6 +14,7 @@
   @media (min-width: @tablet-width) {
     min-height: 729px;
     background-image: url("../../img/main-header/back-tablet.jpg");
+    background-position: left 50% bottom 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/main-header/back-tablet@2x.jpg");
@@ -31,27 +32,19 @@
     }
   }
 
-  &--form {
-    min-height: 237px;
-
-    @media (min-width: @tablet-width) {
-      min-height: 440px;
-    }
-
-    @media (min-width: @desktop-width) {
-      min-height: 394px;
-    }
-  }
-
+  &--form,
   &--catalog {
     min-height: 237px;
+    background-position: left 50% bottom -225px;
 
     @media (min-width: @tablet-width) {
       min-height: 440px;
+      background-position: left 50% bottom -289px;
     }
 
     @media (min-width: @desktop-width) {
       min-height: 394px;
+      background-position: 50% 0;
     }
   }
 }
