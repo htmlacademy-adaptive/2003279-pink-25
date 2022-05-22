@@ -8,6 +8,12 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
 }
 
 .slider__toggle {
@@ -24,10 +30,6 @@
   button {
     border: none;
     background-color: transparent;
-  }
-
-  &:not(:last-child) {
-    margin-right: 19px;
   }
 
   &:hover,
