@@ -1,10 +1,18 @@
 .slider__toggles {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
 
-  @media (max-width: @tablet-width-only) {
-    display: flex;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
   }
 }
 
@@ -17,9 +25,11 @@
   padding: 0;
   box-sizing: content-box;
   border: none;
+  cursor: pointer;
 
-  &:not(:last-child) {
-    margin-right: 19px;
+  button {
+    border: none;
+    background-color: transparent;
   }
 
   &:hover,

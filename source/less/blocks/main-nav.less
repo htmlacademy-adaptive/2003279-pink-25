@@ -210,13 +210,20 @@
     align-items: center;
     background: none;
     margin-left: auto;
-    max-width: 620px;
+    max-width: 645px;
   }
 }
 
 .main-nav__item {
   @media (min-width: @desktop-width) {
     padding: 15px 25px;
+    box-sizing: border-box;
+  }
+
+  &:last-child {
+    @media (min-width: @desktop-width) {
+      padding-right: 0;
+    }
   }
 }
 

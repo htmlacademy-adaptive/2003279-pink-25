@@ -147,82 +147,54 @@
             <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
             <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current"></button>
-            <button class="slider__toggle"></button>
-            <button class="slider__toggle"></button>
-          </p>
+          <ul class="reviews__toggles slider__toggles">
+            <li class="slider__toggle slider__toggle--current"><button type="button"></button></li>
+            <li class="slider__toggle"><button type="button"></button></li>
+            <li class="slider__toggle"><button type="button"></button></li>
+          </ul>
 
         </div>
       </section>
 
-      <section class="price slider">
-        <h2 class="visually-hidden">Прайс</h2>
-        <div class="price__list slider__list">
-          <section class="price__item slider__item">
-            <h3 class="visually-hidden">Базовый тариф</h3>
-            <div class="price__title price__title--first">
-              <span class="price__name">База</span>
-              <span class="price__cost">1,99 USD</span>
-            </div>
-            <ul class="price__feature-list">
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Розовый фильтр</span>
-              </li>
-              <li class="price__feature-item">
-                <span class="price__feature">Смайлики</span>
-              </li>
-              <li class="price__feature-item">
-                <span class="price__feature">Комментарии</span>
-              </li>
-            </ul>
-          </section>
+      <section class="price">
+        <div class="price__container slider">
+          <div class="slider__table">
+            <table class="price__table price__table--current-02" id="price">
+              <tr>
+                <th class="price__hidden-cell"></th>
+                <td class="price__title"><span class="price__name">База</span><span class="price__cost">1,99 USD</span></td>
+                <td class="price__title price__title--popular"><span class="price__name">Стандарт</span><span class="price__cost">3,99 USD</span></td>
+                <td class="price__title"><span class="price__name">Анлим</span><span class="price__cost">9,99 USD</span></td>
+              </tr>
+              <tr>
+                <th class="price__cell price__function-name">Розовый фильтр</th>
+                <td class="price__cell"></td>
+                <td class="price__cell"></td>
+                <td class="price__cell"></td>
+              </tr>
+              <tr>
+                <th class="price__cell price__function-name">Смайлики</th>
+                <td class="price__cell price__cell--no"></td>
+                <td class="price__cell"></td>
+                <td class="price__cell"></td>
+              </tr>
+              <tr>
+                <th class="price__cell price__function-name">Комментарии</th>
+                <td class="price__cell price__cell--no"></td>
+                <td class="price__cell price__cell--no"></td>
+                <td class="price__cell"></td>
+              </tr>
+            </table>
+          </div>
 
-          <section class="price__item slider__item slider__item--current price__item--popular">
-            <h3 class="visually-hidden">Стандартный тариф</h3>
-            <div class="price__title price__title--second">
-              <span class="price__name">Стандарт</span>
-              <span class="price__cost">3,99 USD</span>
-            </div>
-            <ul class="price__feature-list">
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Розовый фильтр</span>
-              </li>
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Смайлики</span>
-              </li>
-              <li class="price__feature-item">
-                <span class="price__feature">Комментарии</span>
-              </li>
-            </ul>
-          </section>
-
-          <section class="price__item slider__item">
-            <h3 class="visually-hidden">Безлимитный тариф</h3>
-            <div class="price__title price__title--third">
-              <span class="price__name">Анлим</span>
-              <span class="price__cost">9,99 USD</span>
-            </div>
-            <ul class="price__feature-list">
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Розовый фильтр</span>
-              </li>
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Смайлики</span>
-              </li>
-              <li class="price__feature-item price__feature-item--yes">
-                <span class="price__feature">Комментарии</span>
-              </li>
-            </ul>
-          </section>
+          <ul class="slider__toggles">
+            <li><button id="button1" class="slider__toggle price__toggle" type="button"></button></li>
+            <li><button id="button2" class="slider__toggle slider__toggle--current price__toggle" type="button"></button></li>
+            <li><button id="button3" class="slider__toggle price__toggle" type="button"></button></li>
+          </ul>
         </div>
-
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle"></button>
-          <button class="slider__toggle slider__toggle--current"></button>
-          <button class="slider__toggle"></button>
-        </p>
       </section>
+
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
