@@ -159,7 +159,7 @@
       <section class="price">
         <div class="price__container slider">
           <div class="slider__table">
-            <table class="price__table">
+            <table class="price__table price__table--current-02" id="price">
               <tr>
                 <th class="price__hidden-cell"></th>
                 <td class="price__title"><span class="price__name">База</span><span class="price__cost">1,99 USD</span></td>
@@ -188,9 +188,9 @@
           </div>
 
           <ul class="slider__toggles">
-            <li><button class="slider__toggle slider__toggle--current-01" type="button"></button></li>
-            <li><button class="slider__toggle slider__toggle--current slider__toggle--current-02" type="button"></button></li>
-            <li><button class="slider__toggle slider__toggle--current--03" type="button"></button></li>
+            <li><button id="button1" class="slider__toggle price__toggle" type="button"></button></li>
+            <li><button id="button2" class="slider__toggle slider__toggle--current price__toggle" type="button"></button></li>
+            <li><button id="button3" class="slider__toggle price__toggle" type="button"></button></li>
           </ul>
         </div>
       </section>
