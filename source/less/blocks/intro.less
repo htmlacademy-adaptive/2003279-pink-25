@@ -1,42 +1,62 @@
 .intro {
+  background-color: @blue-black;
+
   &--main {
-    background: url("../img/main-header/hand-mobile.png") no-repeat 50% 88px;
+    background: url("../img/main-header/back-mobile-index.jpg") no-repeat left 50% top 0, @blue-black;
+    padding-top: 89px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-header/hand-mobile@2x.png");
-      background-size: auto 286px;
+      background: url("../img/main-header/back-mobile-index@2x.jpg") no-repeat left 50% top 0, @blue-black;
     }
 
     @media (min-width: @tablet-width) {
-      max-width: 620px;
-      margin: 0 auto;
-
-      padding-top: 93px;
+      background: url("../img/main-header/back-tablet-index.jpg") no-repeat left 50% top 0;
+      padding-top: 205px;
       padding-bottom: 114px;
-      background: url("../img/main-header/hand-tablet.png") no-repeat 50% 100%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/main-header/hand-tablet@2x.png");
-        background-size: auto 545px;
+        background: url("../img/main-header/back-tablet-index@2x.jpg") no-repeat left 50% top 0, @blue-black;
       }
     }
 
     @media (min-width: @desktop-width) {
-      max-width: 940px;
-      margin: 0 auto;
-      padding-top: 99px;
+      background: url("../img/main-header/back-desktop-index.jpg") no-repeat left 50% top 0;
+      padding-top: 209px;
       padding-bottom: 125px;
-      background: url("../img/main-header/hand-desktop.png") no-repeat 15px 100%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/main-header/hand-desktop@2x.png");
-        background-size: auto 645px;
+        background: url("../img/main-header/back-desktop-index@2x.jpg") no-repeat left 50% top 0, @blue-black;
       }
     }
   }
 
   &--catalog,
   &--form {
+    background: url("../img/main-header/back-mobile.jpg") no-repeat left 50% top 0;
+    padding-top: 94px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/main-header/back-mobile@2x.jpg") no-repeat left 50% top 0;
+    }
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/main-header/back-tablet.jpg") no-repeat left 50% top 0;
+      padding-top: 176px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/main-header/back-tablet@2x.jpg") no-repeat left 50% top 0;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      background: url("../img/main-header/back-desktop.jpg") no-repeat left 50% top 0;
+      padding-top: 169px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/main-header/back-desktop@2x.jpg") no-repeat left 50% top 0;
+      }
+    }
+
     .title {
       line-height: 33px;
 
@@ -46,15 +66,36 @@
       }
     }
   }
+
+  &--catalog {
+    padding-bottom: 77px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 128px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 89px;
+    }
+  }
+
+  &--form {
+    padding-bottom: 43px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 89px;
+    }
+  }
 }
 
 .intro__download {
   @media (max-width: @mobile-width-only) {
-    background-color: @blue-black;
     padding-top: 28px;
     padding-bottom: 31px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -64,7 +105,6 @@
   color: @white;
 
   &--main {
-    margin-top: 23px;
     max-width: 230px;
     padding-bottom: 315px;
 
@@ -84,33 +124,22 @@
   }
 
   &--form {
-    padding-top: 29px;
-    padding-bottom: 43px;
     max-width: 280px;
 
     @media (min-width: @tablet-width) {
       max-width: 490px;
-      padding-top: 66px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 747px;
-      padding-top: 59px;
     }
   }
 
   &--catalog {
-    padding-top: 29px;
-    padding-bottom: 77px;
     max-width: 280px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 66px;
       max-width: 360px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-top: 59px;
     }
   }
 }
@@ -183,6 +212,7 @@
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+  color: @white;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
