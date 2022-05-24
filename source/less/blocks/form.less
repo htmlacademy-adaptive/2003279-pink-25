@@ -71,6 +71,13 @@
   list-style-type: none;
 }
 
+
+.form__item:focus-within {
+  .control::before {
+    border-color: @dark-gray;
+  }
+}
+
 .form__label {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -108,7 +115,7 @@
     flex-grow: 1;
   }
 
-  &::placeholder {
+  ::placeholder {
     font-size: 18px;
     line-height: 30px;
     color: @dark-gray;
