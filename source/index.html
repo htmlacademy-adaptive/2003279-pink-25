@@ -20,14 +20,14 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
 
-            <a class="main-nav__logo logo" href="index.html">
-              <svg class="logo__glasses" width="59" height="40">
+            <a class="main-nav__logo logo" href="index.html" aria-label="Перейти на главную страницу">
+              <svg class="logo__glasses" width="59" height="40" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#logo-glasses"></use>
               </svg>
-              <svg class="logo__word" width="74" height="23">
+              <svg class="logo__word" width="74" height="23" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#logo-word"></use>
               </svg>
-              <svg class="logo__desktop" width="147" height="40">
+              <svg class="logo__desktop" width="147" height="40" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#logo-desktop"></use>
               </svg>
             </a>
@@ -52,30 +52,32 @@
 
         </div>
       </nav>
-
-      <section class="intro intro--main">
-        <b class="intro__caption intro__caption--main title">Взгляните на жизнь иначе!</b>
-
-        <div class="intro__download">
-          <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
-          <ul class="intro__application-list">
-            <li class="intro__application-item">
-              <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
-            </li>
-            <li class="intro__application-item">
-              <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
-            </li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Приложение Пинк</h1>
+
+      <section class="intro intro--main">
+
+        <div class="page-wrapper">
+          <b class="intro__caption intro__caption--main title">Взгляните на жизнь иначе!</b>
+          <div class="intro__download">
+            <a class="intro__download-button button button--primary" href="https://apps.apple.com">Скачать приложение</a>
+            <ul class="intro__application-list">
+              <li class="intro__application-item">
+                <a class="intro__apple-icon" href="https://apps.apple.com"><span class="visually-hidden">Скачать приложение для Iphone.</span></a>
+              </li>
+              <li class="intro__application-item">
+                <a class="intro__android-icon" href="https://play.google.com"><span class="visually-hidden">Скачать приложение для Android.</span></a>
+              </li>
+              <li class="intro__application-item">
+                <a class="intro__windows-icon" href="http://windowsphone.com/store"><span class="visually-hidden">Скачать приложение для Windows mobile.</span></a>
+              </li>
+            </ul>
+            <p class="intro__description">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
@@ -212,7 +214,7 @@
               </div>
               <div class="contacts__item contacts__item--third">
                 <b class="contacts__title">Приезжайте в гости:</b>
-                <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+                <a class="contacts__text" href="https://goo.gl/maps/d14uM8LreEiXDKEi9" target="_blank">ул. Большая<br>Конюшенная, 19/8</a>
               </div>
             </div>
           </address>
@@ -227,36 +229,35 @@
       <h2 class="visually-hidden">Контакты в соцсетях</h2>
       <div class="page-wrapper">
         <div class="main-footer__container">
-          <a class="main-footer__logo logo" href="index.html">
-            <svg class="logo__glasses" width="59" height="40">
+          <a class="main-footer__logo logo" href="index.html" aria-label="Перейти на главную страницу">
+            <svg class="logo__glasses" width="59" height="40" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo-glasses"></use>
             </svg>
-            <svg class="logo__word" width="74" height="23">
+            <svg class="logo__word" width="74" height="23" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo-word"></use>
             </svg>
-            <svg class="logo__desktop-footer" width="147" height="40">
+            <svg class="logo__desktop-footer" width="147" height="40" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#logo-desktop-footer"></use>
             </svg>
           </a>
 
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
+            </li>
+          </ul>
+
           <div class="main-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">HTML Academy</span>
-              <svg width="27" height="34">
+              <svg width="27" height="34" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#html-academy"></use>
               </svg>
             </a>

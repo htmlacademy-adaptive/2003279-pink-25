@@ -94,27 +94,27 @@
       position: relative;
       padding-right: 80px;
     }
+  }
 
-    &[type="tel"] {
-      @media (min-width: @tablet-width) {
-        background: url("../img/icons/form-phone-icon.svg") no-repeat 458px center;
-        z-index: 3;
-      }
-
-      @media (min-width: @desktop-width) {
-        background-position-x: 333px;
-      }
+  .form__input[type="tel"] {
+    @media (min-width: @tablet-width) {
+      background: url("../img/icons/form-phone-icon.svg") no-repeat 458px center;
+      z-index: 3;
     }
 
-    &[type="email"] {
-      @media (min-width: @tablet-width) {
-        background: url("../img/icons/form-mail-icon.svg") no-repeat 458px center;
-        z-index: 3;
-      }
+    @media (min-width: @desktop-width) {
+      background-position-x: 333px;
+    }
+  }
 
-      @media (min-width: @desktop-width) {
-        background-position-x: 333px;
-      }
+  .form__input[type="email"] {
+    @media (min-width: @tablet-width) {
+      background: url("../img/icons/form-mail-icon.svg") no-repeat 458px center;
+      z-index: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position-x: 333px;
     }
   }
 }
